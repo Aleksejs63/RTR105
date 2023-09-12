@@ -1,0 +1,89 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  man ls
+    4  man tree
+    5  man mkdir
+    6  man touch
+    7  ls
+    8  ls Do
+    9  ls Documents/
+   10  ls Downloads/
+   11  ls -la Downloads/
+   12  ls LTsp
+   13  ls LTspiceXVII/
+   14  man tree
+   15  tree -L
+   16  tree -L 1
+   17  tree -L 2
+   18  tree -L 3
+   19  tree -L 12
+   20  tree -L 5
+   21  tree -L 4
+   22  echo "Hello World!"
+   23  #!
+   24  d
+   25  man #!
+   26  man #
+   27  man man
+   28  #!/bin/bash
+   29  ls
+   30  man chmod
+   31  echo "Hello world" > program.txt
+   32  cat program.txt 
+   33  chmod +x program.txt 
+   34  ls
+   35  program.txt
+   36  program
+   37  rm program.txt 
+   38  ls
+   39  bash
+   40  man bash
+   41  nano
+   42  man nano
+   43  nano ~/.bashrc
+   44  man bashrc
+   45  man bash
+   46  ls -la
+   47  ls -a
+   48  cat .bashrc
+   49  cat .bash_history
+   50  history
+   51  man nano
+   52  whereis whoami
+   53  man cat
+   54  who
+   55  ls -l /usr/bin/whoami
+   56  ls /bin
+   57  ls -l /bin/busybox 
+   58  ls -l /bin/pwd
+   59  ls -l user/bin/pwd
+   60  ls -l /bin/pwd
+   61  whereis pwd
+   62  history
+   63  nano pwd
+   64  nano bin/pwd/
+   65  echo $
+   66  whereis pwd
+   67  echo $PATH
+   68  nano mans_pirmais_shell_skripts.sh
+   69  ls -lt
+   70  cat mans_pirmais_shell_skripts.sh 
+   71  nano mans_pirmais_shell_skripts.sh 
+   72  chmod 754 mans_pirmais_shell_skripts.sh 
+   73  ls -lt
+   74  /home/user/mans_pirmais_shell_skripts.sh 
+   75  ls
+   76  ls ABC
+   77  cd ABC/
+   78  ls
+   79  ls -lt
+   80  cat c.txt 
+   81  echo $PATH 
+   82  cd
+   83  mv mans_pirmais_shell_skripts.sh  /bin/
+   84  echo $PATH
+   85  PATH=$PATH:~
+   86  echo $PATH
+   87  mv mans_pirmais_shell_skripts.sh  /bin/
+   88  mans_pirmais_shell_skripts.sh 
+   89  history > vesture_3_nodarbiba.txt

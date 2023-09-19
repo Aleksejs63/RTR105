@@ -1,0 +1,93 @@
+    1  git clone https://github.com/Aleksejs63/RTR105
+    2  ls
+    3  cd RTR105/
+    4  ls -rt
+    5  nano README.md 
+    6  git clone https://github.com/Aleksejs63/RTR105
+    7  ls -rt
+    8  rmdir RTR105/
+    9  cd RTR105/
+   10  rm *
+   11  ls
+   12  cd ..
+   13  rmdir RTR105/
+   14  ls -rt
+   15  cd RTR105/
+   16  ls
+   17  rmdir RTR105
+   18  cd ..
+   19  rmdir RTR105/
+   20  rmdir RTR105/RTR105
+   21  ls
+   22  rmdir RTR105/
+   23  rmdir ./RTR105
+   24  rmdir /RTR105
+   25  cd
+   26  ls -lt
+   27  ls RTR105/ -lt
+   28  ls RTR105/RTR105/ -lt
+   29  cd RTR105/
+   30  ls
+   31  rm *
+   32  rmdir RTR105/
+   33  cd
+   34  clar
+   35  clear
+   36  ls -lt
+   37  ls -lt | grep RTR
+   38  man rmdir
+   39  rmdir RTR105/ --ignore-fail-on-non-empty 
+   40  ls -lt
+   41  man rm
+   42  rm RTR105/ -r
+   43  man rm
+   44  rm RTR105/ -rf
+   45  ls
+   46  ls -lt
+   47  git clone https://github.com/Aleksejs63/RTR105
+   48  ls -lt
+   49  ls -lt RTR105/
+   50  pwd
+   51  cd ~/RTR105/
+   52  cd ..
+   53  cd ./RTR105/
+   54  la -la
+   55  cd .git/
+   56  ls -la
+   57  n\cat config 
+   58  cat config 
+   59  ls -lt
+   60  cat index
+   61  hexdump -C index
+   62  nano index
+   63  hexdump -C config
+   64  cd ..
+   65  pwd
+   66  history
+   67  history > history_19092023_class4.txt
+   68  ls -lt
+   69  cat history_19092023_class4.txt 
+   70  ls -lt
+   71  nano git-upload
+   72  ls
+   73  cat git-upload 
+   74  echo $PATH
+   75  /home/user/RTR105/git-upload
+   76  ls -lt
+   77  man chmod
+   78  chmod 754 git-upload 
+   79  ls -lt
+   80  $PATH
+   81  PATH=$PATH:~/RTR105/
+   82  echo $PATH
+   83  git-upload
+   84  history
+   85  git-upload
+   86  cd
+   87  ls -lt
+   88  git-upload
+   89  cd RTR105/
+   90  git-upload
+   91  nano git-upload 
+   92  history
+   93  history > history_19092023_class4-2.txt 

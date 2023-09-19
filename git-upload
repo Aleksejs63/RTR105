@@ -1,0 +1,6 @@
+#!/bin/bash
+git add .
+git config --global user.name Aleksejs63
+git config --global user.email aleksejs.jakimovics@edu.rtu.lv
+git commit -m "Class _4a"
+git push origin main	

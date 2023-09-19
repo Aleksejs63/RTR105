@@ -1,0 +1,3 @@
+tutorial linux special variables(tutorialspint). git uploadam uztaisit lai var vardu mainit ar komandu ( pievienot argumentu0
+ortusa linux hw2 majasdarbs
+setupot vm ar ubuntu.

@@ -38,7 +38,7 @@ Sudiju kursa Datormācība (pamatkurss) elektroniskā klade
 - *whereis* - Norāda faila vai komandas atrašanās vietu.
 
 Skripti tiek rakstīti ar teksta rediģēšanas programmas palīdzību(piem. nano) un ar #!/bin/bash tiek norādīts shells. Izveidotais skripts tiek saglabāts ar .sh paplašinājumu.
-Ar chmod palīdzību skriptam tiek piešķirtas atļaujas izpildīties(piem. chmod 754 skripts.sh) 754 => 111 011 010 kas atbilst rwx -wx -w- (read, write, execute).
+Ar chmod palīdzību skriptam tiek piešķirtas atļaujas izpildīties(piem. chmod 754 skripts.sh) 754 => 111 101 010 kas atbilst rwx r-x -w- (read, write, execute).
 Skriptu pēc tā var izpildīt manuāli, norādot tā atrašanās vietu, vai arī pievienojot to kādā no PATH direktorijām vai arī pievienojot PATH faila atrašanās direktoriju ar PATH=$PATH:~ 
 
 ## 4. Nodarbības atziņas

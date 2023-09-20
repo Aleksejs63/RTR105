@@ -45,5 +45,5 @@ Skriptu pēc tā var izpildīt manuāli, norādot tā atrašanās vietu, vai ar�
 - *git clone* - Lejupielādē repozitoriju, ja norādā saiti uz to. Automatiski izveido mapi ar repozitorija nosaukumu, ja netiek norādīts mapes nosaukums.
 - *ls | grep* - grep izprintē līnijas kuras atbilst lietotāja norādītajiem kritērijiem.
 - *rm /mape -rf - ļauj izdzēst direktorijus izmantojot rm kā arī automātiski apstiprina popupus.
-
+<br>
 Programmas nav jēgas taisīt vaļā ar cat vai nano.

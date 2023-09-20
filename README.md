@@ -31,7 +31,7 @@ Sudiju kursa Datormācība (pamatkurss) elektroniskā klade
 - *cp* - Kopē failus vai direktorijus.
 - *mv* - Pārvieto vai pārdēvē failus.
    - Piemērs: mv CDE/text_1.txt CDE/text_3.txt  - Failu text_1 direktorijā CDE nepārvietoja, bet pārdēvēja par text_3.
-   - 
+
 ## 3. Nodarbības atziņas
 - *chmod* - Ļauj izmainīt faila tiesības.
 - *nano* - Teksta rediģētājs.
@@ -45,4 +45,5 @@ Skriptu pēc tā var izpildīt manuāli, norādot tā atrašanās vietu, vai ar�
 - *git clone* - Lejupielādē repozitoriju, ja norādā saiti uz to. Automatiski izveido mapi ar repozitorija nosaukumu, ja netiek norādīts mapes nosaukums.
 - *ls | grep* - grep izprintē līnijas kuras atbilst lietotāja norādītajiem kritērijiem.
 - *rm /mape -rf - ļauj izdzēst direktorijus izmantojot rm kā arī automātiski apstiprina popupus.
+
 Programmas nav jēgas taisīt vaļā ar cat vai nano.

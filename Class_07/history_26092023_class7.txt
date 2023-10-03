@@ -1,0 +1,113 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  pwd
+    4  ls -lt
+    5  git pull https://github.com/Aleksejs63/RTR105
+    6  git clone https://github.com/Aleksejs63/RTR105
+    7  ls -lt
+    8  cd RTR105/
+    9  ls -lt
+   10  mkdir Class_06
+   11  ls -lt
+   12  cd Class_06
+   13  ls -lt
+   14  cd ..
+   15  cd Class_05
+   16  ls
+   17  cd ../Class_06
+   18  nano data-output.c
+   19  ls
+   20  ./data-output.c
+   21  gcc data-output.c 
+   22  nano data-output.c 
+   23  gcc data-output.c 
+   24  nano data-output.c 
+   25  gcc data-output.c 
+   26  nano data-output.c 
+   27  gcc data-output.c 
+   28  echo &0
+   29  nano data-output.c 
+   30  man gcc
+   31  nano data-output.c -o
+   32  gcc data-output.c -o
+   33  gcc data-output.c -o output
+   34  ls
+   35  cat output 
+   36  gcc data-output.c -o output.txt
+   37  ls
+   38  rm output
+   39  ls
+   40  cat output.txt 
+   41  ls
+   42  cat a.out
+   43  rm *
+   44  ls
+   45  ls -lta
+   46  nano printf-tests.c
+   47  gcc printf-tests.c 
+   48  ls -lt
+   49  ./a.out 
+   50  nano printf-tests.c
+   51  cd ..
+   52  mv Class_06 Class_07
+   53  ls
+   54  cd Class_07
+   55  ls -lt
+   56  ./a.out 
+   57  nano printf-tests.c 
+   58  nano scanf-tests.c
+   59  gcc scanf-tests.c 
+   60  ls
+   61  ./a.out 
+   62  nano scanf-tests.c 
+   63  nano printf-tests.c 
+   64  gcc scanf-tests.c 
+   65  ./a.out 
+   66  f
+   67  gcc printf-tests.c 
+   68  nano printf-tests.c 
+   69  gcc printf-tests.c 
+   70  nano printf-tests.c 
+   71  gcc printf-tests.c 
+   72  nano printf-tests.c 
+   73  gcc printf-tests.c 
+   74  nano printf-tests.c 
+   75  gcc printf-tests.c 
+   76  ./a.out 
+   77  nano printf-tests.c 
+   78  gcc printf-tests.c 
+   79  ./a.out 
+   80  nano printf-tests.c 
+   81  gcc printf-tests.c 
+   82  ./a.out 
+   83  nano printf-tests.c 
+   84  gcc printf-tests.c 
+   85  ./a.out 
+   86  nano printf-tests.c 
+   87  gcc printf-tests.c 
+   88  ./a.out 
+   89  nano printf-tests.c 
+   90  gcc printf-tests.c 
+   91  ./a.out 
+   92  nano printf-tests.c 
+   93  gcc printf-tests.c 
+   94  ./a.out 
+   95  nano printf-tests.c 
+   96  gcc printf-tests.c 
+   97  ./a.out 
+   98  nano printf-tests.c 
+   99  nano scanf-tests.c 
+  100  gcc scanf-tests.c 
+  101  ./a.out 
+  102  nano test.c
+  103  gcc test.c 
+  104  ./a.out 
+  105  nano test.c
+  106  ./a.out 
+  107  nano test.c
+  108  gcc test.c 
+  109  ./a.out 
+  110  nano test.c
+  111  gcc test.c 
+  112  ./a.out 
+  113  history >> history_26092023_class7.txt

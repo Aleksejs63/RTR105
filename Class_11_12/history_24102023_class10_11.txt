@@ -1,0 +1,361 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  pwd
+    4  git clone https://github.com/Aleksejs63/RTR105
+    5  ls
+    6  cd RTR105/
+    7  ls
+    8  mkdir Class_11_12
+    9  ls
+   10  cd Class_11_12/
+   11  ls
+   12  nano foo.h
+   13  nano foo.c
+   14  nano main.c
+   15  gcc -Wall -c foo.c
+   16  gcc -Wall -c main.c
+   17  gcc -o testprogram foo.o main.o
+   18  ls
+   19  ./testprogram 
+   20  nano foo.h
+   21  nano foo.c
+   22  nano main.c
+   23  nano foo.c
+   24  gcc -Wall -c foo.c
+   25  gcc -Wall -c main.c
+   26  nano main.c
+   27  nano foo.c
+   28  gcc -Wall -c foo.c
+   29  gcc -Wall -c main.c
+   30  nano main.c
+   31  gcc -Wall -c main.c
+   32  nano main.c
+   33  gcc -Wall -c foo.c
+   34  gcc -Wall -c main.c
+   35  gcc -o testprogram foo.o main.o
+   36  ./testprogram 
+   37  nano fo.c
+   38  nano foo.c
+   39  gcc -o testprogram foo.o main.o
+   40  ./testprogram 
+   41  nano main.
+   42  nano main.c
+   43  nano foo.c
+   44  gcc -Wall -c foo.c
+   45  nano foo.c
+   46  gcc -Wall -c foo.c
+   47  nano foo.c
+   48  gcc -Wall -c foo.c
+   49  gcc -Wall -c main.c
+   50  gcc -o testprogram foo.o main.o
+   51  ./testprogram 
+   52  nano foo.c
+   53  gcc -Wall -c foo.c
+   54  gcc -o testprogram foo.o main.o
+   55  ./testprogram 
+   56  nano foo.c
+   57  cp foo.c foo_v2.c
+   58  nano foo_v2.c 
+   59  ls
+   60  rm foo_v2.c 
+   61  ls -lt
+   62  cp foo.c foo_v2.c
+   63  nano foo_v2.c 
+   64  cp foo.h foo_v2.h
+   65  nano foo_v2.h
+   66  nano foo_v2.c 
+   67  gcc -Wall -c foo_v2.c
+   68  gcc -Wall -c main.c
+   69  nano main.c
+   70  gcc -Wall -c main.c
+   71  nano main.c
+   72  ls -lt
+   73  gcc -Wall -c main.c
+   74  nano main.c
+   75  gcc -Wall -c main.c
+   76  nano main.c
+   77  gcc -Wall -c main.c
+   78  clear
+   79  nano main.
+   80  nano main.c
+   81  gcc -Wall -c foo.c
+   82  gcc -Wall -c main.c
+   83  gcc -o testprogram foo.o main.o
+   84  ./testprogram 
+   85  ls -olt
+   86  ls -lt
+   87  cd ..
+   88  ls
+   89  nano dec2bin.c 
+   90  gcc dec2bin.c -o test
+   91  ./test 
+   92  nano dec2bin.c 
+   93  gcc dec2bin.c -o test
+   94  ./test 
+   95  gcc dec2bin.c -o test
+   96  nano dec2bin.c 
+   97  gcc dec2bin.c -o test
+   98  ./test 
+   99  nano dec2bin.c 
+  100  gcc dec2bin.c -o test
+  101  nano dec2bin.c 
+  102  gcc dec2bin.c -o test
+  103  nano dec2bin.c 
+  104  gcc dec2bin.c -o test
+  105  nano dec2bin.c 
+  106  gcc dec2bin.c -o test
+  107  nano dec2bin.c 
+  108  gcc dec2bin.c -o test
+  109  nano dec2bin.c 
+  110  gcc dec2bin.c -o test
+  111  nano dec2bin.c 
+  112  gcc dec2bin.c -o test
+  113  ./test 
+  114  ls -lt
+  115  cd Class_11_12/
+  116  ls
+  117  nano array.c
+  118  gcc array.c -o masivs
+  119  nano array.c
+  120  gcc array.c -o masivs
+  121  ./masivs 
+  122  nano array.c
+  123  gcc array.c -o masivs
+  124  ./masivs 
+  125  nano array.c
+  126  gcc array.c -o masivs
+  127  ./masivs 
+  128  gcc array.c -o masivs
+  129  nano array.c
+  130  gcc array.c -o masivs
+  131  ./masivs 
+  132  nano array.c
+  133  cd ..
+  134  nano dec2bin.c 
+  135  gcc dec2bin.c -o test
+  136  nano dec2bin.c 
+  137  gcc dec2bin.c -o test
+  138  nano dec2bin.c 
+  139  gcc dec2bin.c -o test
+  140  nano dec2bin.c 
+  141  gcc dec2bin.c -o test
+  142  ./test 
+  143  cd Class_11_12/
+  144  ls
+  145  nano array.c 
+  146  gcc array.c -o masivs
+  147  ./masivs 
+  148  nano array.c 
+  149  gcc array.c -o masivs
+  150  nano array.c 
+  151  gcc array.c -o masivs
+  152  nano array.c 
+  153  gcc array.c -o masivs
+  154  ./masivs 
+  155  nano array.c 
+  156  gcc array.c -o masivs
+  157  ./masivs 
+  158  nano array.c 
+  159  ./masivs 
+  160  nano array.c 
+  161  ./masivs 
+  162  gcc array.c -o masivs
+  163  ./masivs 
+  164  nano array.c 
+  165  gcc array.c -o masivs
+  166  ./masivs 
+  167  nano array.c 
+  168  gcc array.c -o masivs
+  169  ./masivs 
+  170  nano array.c 
+  171  gcc array.c -o masivs
+  172  ./masivs 
+  173  nano array.c 
+  174  gcc array.c -o masivs
+  175  ./masivs 
+  176  nano array.c 
+  177  gcc array.c -o masivs
+  178  nano array.c 
+  179  gcc array.c -o masivs
+  180  nano array.c 
+  181  gcc array.c -o masivs
+  182  ./masivs 
+  183  nano array.c 
+  184  gcc array.c -o masivs
+  185  ./masivs 
+  186  nano array.c 
+  187  gcc array.c -o masivs
+  188  ./masivs 
+  189  2-
+  190  nano array.c 
+  191  gcc array.c -o masivs
+  192  ./masivs 
+  193  nano array.c 
+  194  gcc array.c -o masivs
+  195  ./masivs 
+  196  nano array.c 
+  197  gcc array.c -o masivs
+  198  ./masivs 
+  199  2
+  200  nano array.c 
+  201  gcc array.c -o masivs
+  202  ./masivs 
+  203  nano array.c 
+  204  rm array.c 
+  205  ls
+  206  rm masivs
+  207  ls
+  208  nano arrays.c
+  209  gcc arrays.c 
+  210  ls
+  211  ./a.out 
+  212  nano arrays.c
+  213  gcc arrays.c 
+  214  ./a.out 
+  215  nano arrays.c
+  216  gcc arrays.c 
+  217  ./a.out 
+  218  nano arrays.c
+  219  gcc arrays.c 
+  220  ./a.out 
+  221  nano arrays.c
+  222  gcc arrays.c 
+  223  ./a.out 
+  224  nano arrays.c
+  225  gcc arrays.c 
+  226  ./a.out 
+  227  nano arrays.c
+  228  gcc arrays.c 
+  229  ./a.out 
+  230  nano arrays.c
+  231  gcc arrays.c 
+  232  ./a.out 
+  233  nano arrays.c
+  234  gcc arrays.c 
+  235  ./a.out 
+  236  nano arrays.c
+  237  gcc arrays.c 
+  238  ./a.out 
+  239  nano arrays.c
+  240  gcc arrays.c 
+  241  nano arrays.c
+  242  gcc arrays.c 
+  243  ./a.out 
+  244  nano arrays.c
+  245  gcc arrays.c 
+  246  ./a.out 
+  247  nano arrays.c
+  248  gcc arrays.c 
+  249  ./a.out 
+  250  nano arrays.c
+  251  gcc arrays.c 
+  252  nano arrays.c
+  253  gcc arrays.c 
+  254  nano arrays.c
+  255  gcc arrays.c 
+  256  ./a.out 
+  257  nano arrays.c
+  258  gcc arrays.c 
+  259  nano arrays.c
+  260  gcc arrays.c 
+  261  nano arrays.c
+  262  gcc arrays.c 
+  263  ./a.out 
+  264  ls -lt
+  265  nano uzd.c
+  266  gcc uzd.c 
+  267  nano uzd.c
+  268  gcc uzd.c 
+  269  ./a.out 
+  270  gcc uzd.c 
+  271  nano uzd.c
+  272  gcc uzd.c 
+  273  nano uzd.c
+  274  gcc uzd.c 
+  275  nano uzd.c
+  276  gcc uzd.c 
+  277  nano uzd.c
+  278  gcc uzd.c 
+  279  ./a.out 
+  280  nano uzd.c
+  281  gcc uzd.c 
+  282  ./a.out 
+  283  gcc uzd.c 
+  284  nano uzd.c
+  285  gcc uzd.c 
+  286  nano uzd.c
+  287  gcc uzd.c 
+  288  nano uzd.c
+  289  gcc uzd.c 
+  290  ./a.out 
+  291  nano uzd.c
+  292  gcc uzd.c 
+  293  nano uzd.c
+  294  gcc uzd.c 
+  295  ./a.out 
+  296  gcc uzd.c 
+  297  nano uzd.c
+  298  gcc uzd.c 
+  299  ./a.out 
+  300  nano uzd.c
+  301  gcc uzd.c 
+  302  nano uzd.c
+  303  gcc uzd.c 
+  304  ./a.out 
+  305  nano uzd.c
+  306  gcc uzd.c 
+  307  nano uzd.c
+  308  gcc uzd.c 
+  309  nano uzd.c
+  310  gcc uzd.c 
+  311  nano uzd.c
+  312  gcc uzd.c 
+  313  ./a.out 
+  314  nano uzd.c
+  315  gcc uzd.c 
+  316  nano uzd.c
+  317  gcc uzd.c 
+  318  ./a.out 
+  319  nano uzd.c
+  320  gcc uzd.c 
+  321  ./a.out 
+  322  nano uzd.c
+  323  gcc uzd.c 
+  324  ./a.out 
+  325  nano uzd.c
+  326  gcc uzd.c 
+  327  nano uzd.c
+  328  gcc uzd.c 
+  329  ./a.out 
+  330  nano uzd.c
+  331  gcc uzd.c 
+  332  nano uzd.c
+  333  gcc uzd.c 
+  334  ./a.out 
+  335  nano uzd.c
+  336  gcc uzd.c 
+  337  ./a.out 
+  338  nano uzd.c
+  339  gcc uzd.c 
+  340  ./a.out 
+  341  nano uzd.c
+  342  gcc uzd.c 
+  343  ./a.out 
+  344  nano uzd.c
+  345  gcc uzd.c 
+  346  nano uzd.c
+  347  gcc uzd.c 
+  348  ./a.out 
+  349  nano uzd.c
+  350  gcc uzd.c 
+  351  nano uzd.c
+  352  gcc uzd.c 
+  353  ./a.out 
+  354  nano uzd.c
+  355  gcc uzd.c 
+  356  ./a.out 
+  357  nano uzd.c
+  358  gcc uzd.c 
+  359  ./a.out 
+  360  nano uzd.c
+  361  history >> history_24102023_class10_11.txt

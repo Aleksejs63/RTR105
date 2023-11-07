@@ -47,3 +47,6 @@ Skriptu pēc tā var izpildīt manuāli, norādot tā atrašanās vietu, vai ar�
 - *rm /mape -rf - ļauj izdzēst direktorijus izmantojot rm kā arī automātiski apstiprina popupus.
 <br>
 Programmas nav jēgas taisīt vaļā ar cat vai nano.
+
+
+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

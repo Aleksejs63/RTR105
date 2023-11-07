@@ -1,0 +1,3 @@
+set title - nosaukums
+set xlabel/ylabel - ašu nosaukumi
+set xrange/yrange [*:*]- robežu uzstādīšana 

@@ -48,5 +48,4 @@ Skriptu pēc tā var izpildīt manuāli, norādot tā atrašanās vietu, vai ar�
 <br>
 Programmas nav jēgas taisīt vaļā ar cat vai nano.
 
-
-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
+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

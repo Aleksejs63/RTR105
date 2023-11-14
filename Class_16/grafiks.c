@@ -12,7 +12,7 @@ double my_cos(double x)
  sum = a;
  printf("%.2f \t %8.2f \t %8.2f \n", x, a, sum);
 
- while(k < 50)
+ while(k < 500)
  {
   k++;
   a = a * (-1) * x / ((2*k)*(2*k-1));
@@ -31,7 +31,6 @@ void main()
 
  printf("std cos - y = cos(sqrt(%.2f)) = %.20f\n", x, y);
  printf("usr cos - y = my_cos(sqrt(%.2f)) = %.20f\n", x, yy);
-
 
 
 }

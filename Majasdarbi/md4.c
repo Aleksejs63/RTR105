@@ -7,33 +7,26 @@ int main()
     printf("Izvelaties datu tipu: \n char - 1, int - 2, long long - 3\n");
 
     scanf("%d", &i);
-
+    ////////////// sakot ar 13 neiet ///////////////////////
     switch (i)
     {
         case 1:     //char
-        
+
             char skaitlis1;
         
             printf("ievadiet jusu skaitli: \n");
             scanf("%d", &skaitlis1);
-                            
+                          
             faktorials = skaitlis1;
-            
             while (skaitlis1!=2)
             {
+
                 skaitlis1--;
                 faktorials *= skaitlis1;
-                
+  
             }
-            if (faktorials>0)
-            {printf("Jusu skaitla faktorials ir: %d \n", faktorials);}
-            else 
-            {printf("you stupid \n");}
-            
-            
-            
-        
-        
+
+            printf("Jusu skaitla faktorials ir: %d \n", faktorials);
             break;
 
         case 2:     //int
@@ -50,11 +43,8 @@ int main()
                 faktorials *= skaitlis2;
                     
             }
-            if (faktorials>0)
-            {printf("Jusu skaitla faktorials ir: %d \n", faktorials);}
-            else 
-            {printf("you stupid \n");}
-
+            
+            printf("Jusu skaitla faktorials ir: %d \n", faktorials);
             break;
 
         case 3:     //long long
@@ -72,11 +62,8 @@ int main()
                 
                 
             }
-            if (faktorials>0)
-            {printf("Jusu skaitla faktorials ir: %lld \n", faktorials);}
-            else 
-            {printf("you stupid \n");}
 
+            printf("Jusu skaitla faktorials ir: %lld \n", faktorials);
             break;
 
         default:

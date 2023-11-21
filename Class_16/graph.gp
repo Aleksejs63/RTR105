@@ -4,9 +4,9 @@ set xlabel "X Ass"
 set ylabel "Y Ass"
 set grid
 
-set xrange[0:100]
+set xrange[0:20]
 set yrange[-10:10]
-plot [0:100] cos(sqrt(x))
+plot cos(sqrt(x))
 
 a0(x) = 1
 a1(x) = -x / (1*2)
@@ -21,3 +21,7 @@ replot s0(x)
 replot s1(x)
 replot s2(x)
 replot s3(x)
+
+set term png
+set output "grafiks.png"
+replot

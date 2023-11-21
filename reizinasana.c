@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -10,13 +10,7 @@ int main()
    printf("Ievadiet 100 000: \n");
    scanf("%lld", &b);
 
-
-
-   printf("Jusu rezultats: %lld\n", a*b);
+   printf("Jusu rezultats: %lld\n", a * b);
 
    return 0;
-
-
-
-
 }

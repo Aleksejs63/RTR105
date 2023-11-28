@@ -1,6 +1,6 @@
 #!/usr/bin/gnuplot -persist
 # set terminal pngcairo  transparent enhanced font "arial,10" fontscale 1.0 size 600, 400 
-# set output 'surface1.1.png'
+# set output 'derivative.png'
 set grid nopolar
 set grid xtics nomxtics ytics nomytics noztics nomztics nortics nomrtics \
  nox2tics nomx2tics noy2tics nomy2tics nocbtics nomcbtics
@@ -28,3 +28,4 @@ $grid << EOD
 EOD
 
 splot '$grid' matrix with lines notitle
+

@@ -1,68 +1,116 @@
 #include <stdio.h>
 
-int main()
+int main()          //////////////PIEVENO JA 0 VAI 1 TAD IR 1 ///////////////////////
 {
     int i;
-    long long int faktorials;
-    printf("Izvelaties datu tipu: \n char - 1, int - 2, long long - 3\n");
+    int skaitlis;
+    long long int dalijums = 0;
+    long long int prev_fact = 0;
+    
+    printf("Cien. lietotaj ludzu ievadiet jusu faktorialu: ");
+    scanf("%d", &skaitlis);
 
+    printf("Ludzu izvelaties datu tipu\nchar - 1, int - 2, long long int - 3\n");
     scanf("%d", &i);
-    ////////////// sakot ar 13 neiet ///////////////////////
+    
+    
     switch (i)
     {
-    case 1: // char
+    case 1: //char
+    { 
 
-        char skaitlis1;
+        char faktorials;
+        faktorials = skaitlis;
 
-        printf("ievadiet jusu skaitli: \n");
-        scanf("%d", &skaitlis1);
-
-        faktorials = skaitlis1;
-        while (skaitlis1 != 2)
+        while (skaitlis != 2 && dalijums == prev_fact)
         {
+            prev_fact = faktorials;
 
-            skaitlis1--;
-            faktorials *= skaitlis1;
+            skaitlis--;                             
+            faktorials *= skaitlis;
+
+            dalijums = faktorials/skaitlis;
+
+            if (dalijums != prev_fact)
+            {
+                printf("Kluda! Faktorials ir arpus datu tipa robezas.\n");
+                return 10;
+                
+            }
+
         }
 
-        printf("Jusu skaitla faktorials ir: %d \n", faktorials);
+        
+        printf("Jusu skaitla faktorials ir: %hhd \n", faktorials);
+        
+        
         break;
+    }
 
     case 2: // int
+    {
+        int faktorials;
+        faktorials = skaitlis;
 
-        int skaitlis2;
-
-        printf("ievadiet jusu skaitli: \n");
-        scanf("%d", &skaitlis2);
-
-        faktorials = skaitlis2;
-        while (skaitlis2 != 2)
+        while (skaitlis != 2 && dalijums == prev_fact)
         {
-            skaitlis2--;
-            faktorials *= skaitlis2;
-        }
+            prev_fact = faktorials;
 
+            skaitlis--;                             
+            faktorials *= skaitlis;
+
+            dalijums = faktorials/skaitlis;
+
+            if (dalijums != prev_fact)
+            {
+                printf("Kluda! Faktorials ir arpus datu tipa robezas.\n");
+                return 10;
+            }
+
+        }
+        
+        
         printf("Jusu skaitla faktorials ir: %d \n", faktorials);
+       
+        
+        
         break;
+    }
 
     case 3: // long long
+    {
+        long long int faktorials;
 
-        long long int skaitlis3;
-        printf("ievadiet jusu skaitli: \n");
-        scanf("%lld", &skaitlis3);
-
-        faktorials = skaitlis3;
-        while (skaitlis3 != 2 && faktorials > 0)
+        faktorials = skaitlis;
+        while (skaitlis != 2 && dalijums == prev_fact)
         {
-            skaitlis3--;
-            faktorials *= skaitlis3;
-        }
+            prev_fact = faktorials;
 
+            skaitlis--;                             
+            faktorials *= skaitlis;
+
+            dalijums = faktorials/skaitlis;
+
+            if (dalijums != prev_fact)
+            {
+                printf("Kluda! Faktorials ir arpus datu tipa robezas.\n");
+                return 10;
+            }
+
+        }
+        
         printf("Jusu skaitla faktorials ir: %lld \n", faktorials);
+        
+        
+        
         break;
+    }
 
     default:
-        printf("Ludzu ievadiet pareizu vertibu!");
+    {
+        printf("Ludzu ievadiet pareizu vertibu!\n");
+    }
+
     }
 
     return 0;

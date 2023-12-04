@@ -1,14 +1,27 @@
 #include <stdio.h>
 
-int main()          //////////////PIEVENO JA 0 VAI 1 TAD IR 1 ///////////////////////
+int main()          
 {
     int i;
     int skaitlis;
     long long int dalijums = 0;
     long long int prev_fact = 0;
     
-    printf("Cien. lietotaj ludzu ievadiet jusu faktorialu: ");
+    
+    printf("Cien. lietotaj ludzu ievadiet skaili kuram jaiegust faktorials: ");
     scanf("%d", &skaitlis);
+
+    if (skaitlis == 1 || skaitlis == 0)
+    {
+        printf("Si skaitla faktorials ir 1");
+        return 1;
+    }
+    else if (skaitlis < 0)
+    {
+        printf("Ludzu ievadiet pozitivu skaitli!");
+        return 1;
+    }
+    
 
     printf("Ludzu izvelaties datu tipu\nchar - 1, int - 2, long long int - 3\n");
     scanf("%d", &i);

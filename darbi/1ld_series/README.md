@@ -1,4 +1,4 @@
-# 1. Laborotorijas darbs - Teilora rindas
+# 1. Laboratorijas darbs - Teilora rindas
 Autors: Aleksejs Jakimovičs
 
 Grupa: RECV0-1
@@ -8,6 +8,7 @@ Grupa: RECV0-1
 - [grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/grafiks.png) -> Gnuplotā izveidotais grafiks ar manuāli ievadītām argumenta vērtībām
 - [kods.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/kods.png) -> Izpildītā koda attēls (1.daļa)
 - [ascii.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/ascii.png) -> Izpildītā koda attēls kurš ietver ascii zīmējumu (2.daļa)
+- [README.md](https://github.com/Aleksejs63/RTR105/blob/main/darbi/1ld_series/README.md) -> Laboratorijas darbu apraksošs dokuments, kurš satur sevī informāciju par uzrakstīto kodu un rezultātus attēlu veidā.
 ## Apraksts
 
 Šajā laborotorijas darbā tika veikta teilora rindas implementēšana programmā C valodā. 

@@ -40,6 +40,6 @@ ASCII zīmējums:
 
 Funkcijas grafiks:
 
-Attēlojot pirmos saskatiāmos (s0,s1,s2,s3) var redzēt, ka funkcijas ar katru iterāciju (pieskaitīšanu) pietuvojas oriģinālfunkcijai. Sīs grafiks ir ļoti labs piemērs teilora rindu darbības principam.
+Attēlojot pirmos saskatiāmos (s0,s1,s2,s3) var redzēt, ka funkcijas ar katru iterāciju (pieskaitīšanu) pietuvojas oriģinālfunkcijai. Sīs grafiks ir ļoti labs piemērs Teilora rindu darbības principam.
 
 ![funkcijas grafiks](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/grafiks.png)

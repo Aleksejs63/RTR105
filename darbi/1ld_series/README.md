@@ -3,11 +3,11 @@ Autors: Aleksejs Jakimovičs
 
 Grupa: RECV0-1
 ## Mapes saturs
-- grafiks.c -> Uzrakstītā programma
-- graph.gp -> Gnuplot skripts, kurš izveido grafiks.png
-- grafiks.png -> Gnuplotā izveidotais grafiks ar manuāli ievadītām argumenta vērtībām
-- kods.png -> Izpildītā koda attēls (1.daļa)
-- ascii.png -> Izpildītā koda attēls kurš ietver ascii zīmējumu (2.daļa)
+- [grafiks.c](https://github.com/Aleksejs63/RTR105/blob/main/darbi/1ld_series/grafiks.c) -> Uzrakstītā programma
+- [graph.gp](https://github.com/Aleksejs63/RTR105/blob/main/darbi/1ld_series/graph.gp) -> Gnuplot skripts, kurš izveido grafiks.png
+- [grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/grafiks.png) -> Gnuplotā izveidotais grafiks ar manuāli ievadītām argumenta vērtībām
+- [kods.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/kods.png) -> Izpildītā koda attēls (1.daļa)
+- [ascii.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/ascii.png) -> Izpildītā koda attēls kurš ietver ascii zīmējumu (2.daļa)
 ## Apraksts
 
 Šajā laborotorijas darbā tika veikta teilora rindas implementēšana programmā C valodā. 
@@ -38,5 +38,7 @@ ASCII zīmējums:
 
 
 Funkcijas grafiks:
+
+Attēlojot pirmos saskatiāmos (s0,s1,s2,s3) var redzēt, ka funkcijas ar katru iterāciju (pieskaitīšanu) pietuvojas oriģinālfunkcijai. Sīs grafiks ir ļoti labs piemērs teilora rindu darbības principam.
 
 ![funkcijas grafiks](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/1ld_series/grafiks.png)

@@ -54,7 +54,7 @@ void main()
     
     
     
-    ////////////space for ascii//////////////
+    
 
     printf("                 500\n");
     printf("                ____\n");

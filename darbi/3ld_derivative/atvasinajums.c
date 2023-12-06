@@ -20,17 +20,17 @@ void main()
     scanf("%f", &delta_x);
 
     pFile = fopen ("derivative.dat", "w");
-    fprintf(pFile, "\tx");
+    fprintf(pFile, "\tx \n");
 
     int i = ((b-a) / delta_x);
    
     
-    float * x;
-    x = (float*) malloc (i * sizeof(float)); // i * elementuskaits  japieskaita vieninieks//
-    float * der
+    // float * x;
+    // x = (float*) malloc (i * sizeof(float)); // i * elementuskaits  japieskaita vieninieks//
+    // float * der
 //     float der1[i];
 //     float der2[i];
-// float x[i];
+    float x[i];
     x[0] = a;
   
         // while(x<b)
@@ -41,16 +41,34 @@ void main()
         //     x += delta_x;  
 
         // }
-    for (int k = 1; k < i; k++)
-    {
 
+
+
+   
+    for (int k = 1; k < i+1; k++)
+    {
         
-        fprintf(pFile, "%10.2f\n", x[k]);
-        x[k] =  x[k-1] + delta_x; 
+        
+        x[k] =  x[k-1] + delta_x;  
+        
+        
         
     }
         
+    for (int valdis = 0; valdis < i + 1; valdis++)
+    {
+         fprintf(pFile, "%10.2f\t%10.2f\n", x[valdis], cos(sqrt(x[valdis])));       ///// funkciai jabut masiva!!
+    }
     
+   
+
+
+
+
+
+
+
+
 /////////// izpetit malloc//////////////
 
 

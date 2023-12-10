@@ -19,7 +19,7 @@ int main()
     scanf("%f", &delta_x);
 
     pFile = fopen ("derivative.dat", "w");
-    fprintf(pFile, "\t x       cos(sqrt(x))  analytical' cos'(sqrt(x))   analytical'' cos''(sqrt(x)) \n");
+    fprintf(pFile, "x       cos(sqrt(x))    analytical'  forward difference' analytical''  forward difference'' \n");
 
 
     int i = ((b-a) / delta_x);
@@ -59,6 +59,7 @@ int main()
         x[k] =  x[k-1] + delta_x;
 
     }
+
     ///////////////// funkciju masivs
     for (k = 0; k < i+1; k++)
     {
@@ -67,52 +68,48 @@ int main()
 
 
     }
-    /////////////////// atvasinajums1 masivs
+
+    /////////////////// forward difference' masivs
     for (k = 0; k < i+1; k++)
     {
         der1[k] = (func[k+1] - func[k]) / delta_x;
         if (k == i) {der1[i] = 0;}
     }
-    //////////////////// atvadinajums2 masivs
+
+    //////////////////// forward difference'' masivs
     for (k = 0; k < i+1; k++)
     {
         der2[k] = (der1[k+1] - der1[k]) / delta_x;
         if (k == i) {der2[i] = 0;}
         if (k == i-1) {der2[i-1] = 0;}
     }
-    //////////////////// analitiska 1
+
+    //////////////////// analytical' masivs
     for (k = 0; k < i+1; k++)
     {
-    
+
         der_analytical1[k] = ( (-1) * sin(sqrt(x[k])) ) / ( 2 * sqrt(x[k]) );
 
-
     }
-    //////////////////// analitiska 2
+
+    //////////////////// analytical'' masivs
     for (k = 0; k < i+1; k++)
     {
-    
+
         der_analytical2[k] = ( sin(sqrt(x[k])) - sqrt(x[k]) * cos(sqrt(x[k])) ) / ( 4 * x[k] * sqrt(x[k]) );
 
-
     }
-        
-    for (int valdis = 0; valdis < i + 1; valdis++)
+
+
+
+    for (k = 0; k < i+1; k++)
     {
-         fprintf(pFile, "%10.1f\t%10.1f\t%10.5f\t%10.5f\t%10.5f\t%10.5f\n", x[valdis], func[valdis], der_analytical1[valdis], der1[valdis], der_analytical2[valdis], der2[valdis]);
+
+        fprintf(pFile, "%.1f\t\t%10.5f\t\t%10.5f\t\t%10.5f\t\t%10.5f\t\t%10.5f\n", x[k], func[k], der_analytical1[k], der1[k], der_analytical2[k], der2[k]);
+
     }
     
    
-
-
-
-
-
-
-
-
-
-
     free (x);
     free (func);
     free (der1);

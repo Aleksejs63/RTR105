@@ -53,7 +53,7 @@ Pēc tā tiek atbrīvota atmiņa, ko mēs piešķīrām masīviem izmantojot mal
 Pašās beigās fails tiek aiztaisīts.
 
 
-Pēc tā var palais izveidoto derivative.gp gnuplot skriptu, kurš izveidos grafiku derivative.png, kurā varēs redzēt sākonējo funkciju, pirmās un otrās kārtas atvasinājumu izmantojot forward difference. 
+Pēc tā var palaist izveidoto derivative.gp gnuplot skriptu, kurš izveidos grafiku derivative.png, kurā varēs redzēt sākonējo funkciju, pirmās un otrās kārtas atvasinājumu izmantojot forward difference. 
 
 ### Grafiks
 ![derivative.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative.png)

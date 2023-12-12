@@ -28,7 +28,7 @@ int main()
 
     func_a = cos(sqrt(a));
     func_b = cos(sqrt(b));
-
+ 
     if (func_a * func_b > 0)
     {
         printf("Intervala [%.2f;%.2f] funkcijai cos(sqrt(x)) ", a, b);
@@ -36,8 +36,8 @@ int main()
         return 1;
     }
     
-    printf("cos(sqrt(%7.3f)) = %7.3f\t\t\t\t", a, func_a);
-    printf("cos(sqrt(%7.3f)) = %7.3f\n\n\n", b, func_b);
+    printf("cos(sqrt(%.3f)) = %.3f\t", a, func_a);
+    printf("cos(sqrt(%.3f)) = %.3f\n\n", b, func_b);
 
     while ((b-a) > delta_x)
     {
@@ -53,9 +53,9 @@ int main()
             b = x;
         }
 
-        printf("%2d. iteracija: cos(sqrt(%7.3f)) = %7.3f\t", k, a, cos(sqrt(a)));
-        printf("cos(sqrt(%7.3f)) = %7.3f\t", x, modified_func(x, c));
-        printf("cos(sqrt(%7.3f)) = %7.3f\n", b, cos(sqrt(b)));
+        printf("%2d. iteracija: cos(sqrt(%.3f)) = %.3f\t", k, a, cos(sqrt(a)));
+        printf("cos(sqrt(%.3f)) = %.3f\t", x, modified_func(x, c));
+        printf("cos(sqrt(%.3f)) = %.3f\n", b, cos(sqrt(b)));
 
     }
     

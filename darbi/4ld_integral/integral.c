@@ -65,10 +65,10 @@ int main()
     }
     printf("Integrala vertiba trapecu metodei: %.5f \n\n", integral2);
 
-    ///////Simpsona metode  
+    ///////Simpsona metode   NEIET
         
     n = 2;
-    integral2 = (b - a) * ( cos(sqrt(a)) + 4 *cos(sqrt( (a + b) / n)) + cos(sqrt(b)) ) / (n * 3);
+    integral2 = (b - a) * ( cos(sqrt(a)) + 4 * cos(sqrt( (a + b) / n)) + cos(sqrt(b)) ) / (n * 3);
     integral1 = 0.;
     
     
@@ -79,10 +79,33 @@ int main()
         
         integral1 = integral2;
         integral2 = 0.;
-
+        
         for (k = 1; k < n; k++)
         {
-            integral2 += (h / 3.0) * ( cos(sqrt(a + (k - 1) * h)) + 4 * cos(sqrt(  a + ( ((k - 1) + 0.5) * h )))  + cos(sqrt(a + (k * h))) ) ;
+
+            float nosac_a = cos(sqrt(a)), nosac_vid = cos(sqrt( ( a + (k * h)))), nosac_b = cos(sqrt(b)), nosac_vid_sum = 0.;
+
+            // integral2 += (h / 3.0) * ( cos(sqrt(a + ( (k - 1) * h ))) + 4 * cos(sqrt(a + ( (k - 1) + 0.5 ) * h) )  + cos(sqrt(a + (k * h))) ) ;
+            // integral2 += (h / 3.0) * ( cos(sqrt(a + (h * (k - 1)))) + (4 * cos(sqrt(  ( (a + (h  * (k - 1))) + (a + (k * h)) ) / 2.  )) ) + cos(sqrt(a + (k * h))) ) ;
+
+            // integral2 += (h / 3.0) * ( cos(sqrt(a + ( (k - 1) * h ))) + 4 * cos(sqrt((a + ( (k - 1) * h ))+h))  + cos(sqrt(a + (k * h))) );
+            for (; k < n; k++)
+            {
+                if (k % 2 == 0)
+                {
+                    nosac_vid_sum += 2*nosac_vid;
+                }
+                else
+                {
+                    nosac_vid_sum += 4*nosac_vid;
+                }
+            }
+            
+            // printf("nosac_a: %.5f\n", nosac_a );
+            // printf("nosac_vid: %.5f\n", nosac_vid );
+            // printf("nosac_b: %.5f\n", nosac_b );
+            
+            integral2 += (h / 3.0) * ( nosac_a + nosac_vid_sum + nosac_b );
         }
         
         printf("Simpsons method integ1 = %.5f \t integ2 = %.5f \n", integral1, integral2);

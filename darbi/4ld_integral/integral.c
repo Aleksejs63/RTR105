@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
-
+float coskv(float x)
+{
+    return cos(sqrt(x));
+}
 
 
 
@@ -22,7 +25,7 @@ int main()
     scanf("%f", &eps);
 
     // integral2 = (b - a) * (cos(sqrt(a)) + cos(sqrt(b))) / n;
-    integral2 = (b - a) * cos(sqrt((a + b) / n));   //vieglaks pierakts, tas pats rezultats
+    integral2 = (b - a) * coskv((a + b) / n);   //vieglaks pierakts, tas pats rezultats
     
     while (fabs(integral2 - integral1) > eps)
     {
@@ -34,7 +37,7 @@ int main()
 
         for (k = 0; k < n; k++)
         {
-            integral2 += h * cos(sqrt(a + (k + 0.5) * h));
+            integral2 += h * coskv(a + (k + 0.5) * h);
         }
         
         printf("Rectangle method integ1 = %.5f \t integ2 = %.5f \n", integral1, integral2);
@@ -42,10 +45,10 @@ int main()
     }
 
     printf("Integrala vertiba taisnsturu metodei: %.5f \n\n", integral2);
-    ///////trapecu metode  KAPEC LENAKA ??
+    ///////trapecu metode  
     
     n = 2;
-    integral2 = (b - a) * ( cos(sqrt(a)) + cos(sqrt(b)) ) / n;
+    integral2 = (b - a) * ( coskv(a) + coskv(b)) / n;
     integral1 = 0.;
     
     while (fabs(integral2 - integral1) > eps)
@@ -58,7 +61,7 @@ int main()
 
         for (k = 1; k < n; k++)
         {
-            integral2 += (cos(sqrt(a + (k - 1) * h)) + cos(sqrt(a + (k * h)))) * (h / 2);
+            integral2 += (coskv(a + (k - 1) * h) + coskv(a + (k * h))) * (h / 2);
         }
         
         printf("Trapezoidal method integ1 = %.5f \t integ2 = %.5f \n", integral1, integral2);
@@ -68,9 +71,9 @@ int main()
     ///////Simpsona metode   NEIET
         
     n = 2;
-    integral2 = (b - a) * ( cos(sqrt(a)) + 4 * cos(sqrt( (a + b) / n)) + cos(sqrt(b)) ) / (n * 3);
+    integral2 = (b - a) * ( coskv(a) + 4 * coskv((a + b) / n) + coskv(b) ) / (n * 3);
     integral1 = 0.;
-    
+    printf("SImpsona integralsis");
     
     while (fabs(integral2 - integral1) > eps)
     {

@@ -53,7 +53,7 @@ int main()
             b = x;
         }
 
-        printf("%2d. iteracija: cos(sqrt(%.3f)) = %.3f\t", k, a, cos(sqrt(a)));
+        printf("%2d. iteracija: cos(sqrt(%.3f)) = %.3f\t\t", k, a, cos(sqrt(a)));
         printf("cos(sqrt(%.3f)) = %.3f\t", x, modified_func(x, c));
         printf("cos(sqrt(%.3f)) = %.3f\n", b, cos(sqrt(b)));
 

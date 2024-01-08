@@ -5,6 +5,10 @@ Grupa: RECV0-1
 ## Mapes saturs
 - [saknes.c](https://github.com/Aleksejs63/RTR105/blob/main/darbi/1ld_series/grafiks.c) -> Uzrakstītā programma
 - [README.md](https://github.com/Aleksejs63/RTR105/blob/main/darbi/1ld_series/README.md) -> Laboratorijas darbu apraksošs dokuments, kurš satur sevī informāciju par uzrakstīto kodu.
+- [roots.dat](https://github.com/Aleksejs63/RTR105/blob/main/darbi/2ld_roots/roots.dat) -> dat fails, kurš satur sakni no programmas un y = 0.
+- [grafiks.gp](https://github.com/Aleksejs63/RTR105/blob/main/darbi/2ld_roots/grafiks.gp) -> Gnuplot skripts, kurš veido dotās funkcijas grafiku un punktu ar korrdinātēm no roots.dat faila.
+- [grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/2ld_roots/grafiks.png) -> grafiks.gp skripta izveidotā grafika attēls.
+- [kods.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/2ld_roots/kods.png) -> Koda darbības attēls.
 ## Apraksts
 
 Šajā laboratorijas darbā tika uzrakstīta programma, kura atrod funkcijas saknes izmantojot dihotomijas metodi.
@@ -31,6 +35,8 @@ Main funkcijā tiek izveidoti float tipa mainīgie:
 
 Tiek arī izveidots int tipa mainīgais k, kurš norāda uz iterāciju skaitu.
 
+Papildus tiek izveidots roots.dat fails, lai var iegūto sakni izvadīt gnuplot.
+
 Pēc izveides programma lūdz lietotāju ievadīt a, b, c un delta_x vērtības.
 
 Tad func_a un func_b tiek piešķirti dotās funkcijas lielumi respektīvi pie a un b.
@@ -48,3 +54,20 @@ Gadījumā ja sākuma un viduspunkta reizinājums ir mazāks par 0, tad intervā
 Pēc šī procesa tiek izprintēta iterācija, funkcijas vērtība pie sākumpunkta a, pie x un pie galapunkta b. 
 
 Šis process atkārtojas līdz programma iziet no while cikla. Pēc tā Tiek izprintēta iegūtā saknes vērtība un funkcijas vērtība pie šīs saknes (jābūt ļoti tuvu 0).
+
+Iegūto sakni ievada roots.dat failā un blakus pieliek 0 (tā būs y vērtība grafikā).
+
+## Koda darbība un grafiks
+
+Šeit var novērot programmas darbību intervālā no 1 līdz 5 bez pārbīdes, ar precizitāti 0.01.
+
+![kods.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/2ld_roots/kods.png)
+
+Iegūtā sakne pēc tā ievietojas roots.dat failā un fails tiek pieletots grafiks.gp skriptā, kurš izveido šo grafiku:
+
+
+![grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/2ld_roots/grafiks.png)
+
+X un Y intervāli izvēlēti ļoti mazi, lai var novērot saknes nobīdi no patiesās funkcijas vertības.
+
+Var redzēt, ka metode ir ļoti precīza. Uzlabot rezultātu varētu ņemot vairāk ciparus aiz komata (šajā gadījumā bija tikai 3) vai iestādot lielāku precizitāti (šeit 0.01).

@@ -1,4 +1,4 @@
-# 1. Laboratorijas darbs - Teilora rindas
+# 2. Laboratorijas darbs - Atvasināšana
 Autors: Aleksejs Jakimovičs
 
 Grupa: RECV0-1

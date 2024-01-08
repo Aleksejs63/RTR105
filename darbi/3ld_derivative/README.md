@@ -5,7 +5,8 @@ Grupa: RECV0-1
 ## Mapes saturs
 - [atvasinajums.c](https://github.com/Aleksejs63/RTR105/blob/main/darbi/3ld_derivative/atvasinajums.c) -> Uzrakstītā programma
 - [derivative.gp](https://github.com/Aleksejs63/RTR105/blob/main/darbi/3ld_derivative/derivative.gp) -> Gnuplot skripts, kurš izveido derivative.png izmantojot datus no derivative.dat faila, kuru izveidoja atvasinajums.c programma. 
-- [derivative.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative.png) -> Gnuplotā izveidotais grafiks, kurš satur pašu funkciju cos(sqrt(x)) un tās pirmās un otrās kārtas atvasinājumu pēc forward difference metodes.
+- [derivative.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative.png) -> Gnuplotā izveidotais grafiks, kurš satur pašu funkciju cos(sqrt(x)) un tās pirmās un otrās kārtas atvasinājumu pēc forward difference un analītiskās metodes.
+- [derivative_closeup.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative_closeup.png) -> derivative.png grafika pietuvinātā daļa, lai var redzēt atšķirību starp abām metodēm.
 - [README.md](https://github.com/Aleksejs63/RTR105/blob/main/darbi/3ld_derivative/README.md) -> Laboratorijas darbu apraksošs dokuments, kurš satur sevī informāciju par uzrakstīto kodu, pielietotām metodem un šīs mapes saturu.
 - [derivative.dat](https://github.com/Aleksejs63/RTR105/blob/main/darbi/3ld_derivative/derivative.dat) -> Satur no atvasinajums.c iegūtās vērtības tabulas veidā, tas ir, cos(sqrt(x)) analītisko grafiku kā arī to pirmās un otrās kārtas atvasinājumu pēc forward difference metodes un arī pirmās un otrās kārtas atvasinājumu pēc analītiskās formulas.
 ## Apraksts
@@ -57,6 +58,8 @@ Pēc tā var palaist izveidoto derivative.gp gnuplot skriptu, kurš izveidos gra
 
 ### Grafiks
 ![derivative.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative.png)
+![derivative_closeup.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative_closeup.png)
 
+Var redzēt, ka abas metodes nedaudz atšķiras. Bija nepieciešams ļoti tuvu pietuvināt, lai redzētu nelielu atšķirību. No tā var secināt, ka metode ir ļoti precīza.
 
 Ja ir vēlme izveidot grafiku ar citām vērtībām, tad ieteicams norādīt skripta failā x robežas no izvēlētā a līdz izvēlētam b atvasinajums.c programmā. Kā arī pareizi izvēlēties kolonnu no kuras tiek ņemtas vērtības. Ir jāņem vērā, ka plot robežas galējo vērtību nav jāņem kā izvēlēto b, jo pēc forward difference metodes nevar iegūt pēdējo pirmās kārtas atvasinājuma vērtību un pēdējās divas otrās kārtas atvasinājuma vērtību. Grafikā tas uzrādīsies kā funkciju straujš kritums uz y=0.

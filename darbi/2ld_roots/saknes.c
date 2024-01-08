@@ -12,7 +12,8 @@ int main()
     float a, b, c, x, delta_x, func_a, func_b;
     int k = 0;
 
-    
+    FILE * pFile;
+    pFile = fopen ("roots.dat", "w");
 
     printf("Cien. lietotaj ievadiet ludzu a vertibu: ");
     scanf("%f", &a);
@@ -60,6 +61,7 @@ int main()
     }
     
     printf("\nSakne atrodas pie x = %.3f , jo cos(sqrt(x)) ir %.3f\n", x, modified_func(x, c));
-
+    fprintf(pFile, "X\tY\n%.3f\t0", x);
+    fclose (pFile);
     return 0;
 }

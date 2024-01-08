@@ -1,4 +1,4 @@
-# 2. Laboratorijas darbs - Atvasināšana
+# 3. Laboratorijas darbs - Atvasināšana
 Autors: Aleksejs Jakimovičs
 
 Grupa: RECV0-1

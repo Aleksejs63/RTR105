@@ -70,4 +70,4 @@ Iegūtā sakne pēc tā ievietojas roots.dat failā un fails tiek pieletots graf
 
 X un Y intervāli izvēlēti ļoti mazi, lai var novērot saknes nobīdi no patiesās funkcijas vertības.
 
-Var redzēt, ka metode ir ļoti precīza. Uzlabot rezultātu varētu ņemot vairāk ciparus aiz komata (šajā gadījumā bija tikai 3) vai iestādot lielāku precizitāti (šeit 0.01).
+Var redzēt, ka metode ir ļoti precīza. Uzlabot rezultātu varētu ņemot vairāk ciparus aiz komata (šajā gadījumā bija tikai 3) vai iestādot lielāku precizitāti (šeit 0.01).  

@@ -11,7 +11,7 @@ int main()
     float a, b, integral1 = 0., integral2, eps, h;
    
     int n, k, m = 1;
-    // int n = 2, k, m = 1; prev edition
+    
 
     printf("Cien. lietotaj ludzu ievadiet a vertibu: ");
     scanf("%f", &a);
@@ -46,14 +46,15 @@ int main()
 
     printf("Integrala vertiba taisnsturu metodei: %.5f \n", integral2);
 
-
+    
     ///////trapecu metode  
     
     integral2 = (b - a) * ( coskv(a) + coskv(b) ) / 2.;
     integral1 = 0.;
-    
+    m = 1;
     while (fabs(integral2 - integral1) > eps)
     {
+        
         m *= 2;
         n = 2 * m;            
         h = (b - a) / n;  
@@ -73,7 +74,8 @@ int main()
     //////simpsona metode
 
     integral2 = (b - a) * ( coskv(a) + coskv(b) ) / 2.;
-   
+    integral1 = 0.;
+    m = 1;
     while (fabs(integral2 - integral1) > eps)
     {
         m *= 2;

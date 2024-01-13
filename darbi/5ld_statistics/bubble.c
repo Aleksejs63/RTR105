@@ -6,16 +6,6 @@
 
 int main()
 {
-    //min max tikai burtiem saskana ar ascii (punktus atstarpes nenemam)
-    //liec lietotajam lietot anglu burtus
-    //burti var but gan lielie gan mazie
-    //vid ir visu ascii summa un jadala ar skaitu (jaizmanto pareizo datu tipu, jo var but dalskaitlis, janoapalo un char uj jaizvelas kurs simbols atbilst?)
-    //mediana - indekss videjais 
-    //modas meklesana - paradas vairak par vienu reizi, visbiezakais paradisanas skaits, modas var but vairakas.
-    //alternativs modas meklesanas panemiens. pirmais elements, ejam gat rindu un skaitam cik reizes tas paradas. Dara ar katru simbolu un iestata par modu to kas uzvareeja
-    //sakartotais secibai, sak ar pirmo elementu, iegaume poziciju skaitu. Cik reizes(pozicijas) nemainijas un iestata ka modu
-
-
 
 
     //noformesana
@@ -33,50 +23,8 @@ int main()
     printf("Ievadiet tekstu: ");
     fgets(teksts, len, stdin);
 
-    
-   
     int spacecount = 0;
     
-    ////spacecheck WIP
-  
-    // for (int i = 0; i < skaits; i++) 
-    // {
-       
-        
-        
-        
-    //     if (teksts[i] == 32)        
-    //     {
-    //         int a = i;
-    //         teksts[a] = teksts[a + 1];  
-    //         while (a < skaits)    
-    //         {
-                        
-    //             teksts[a+1] = teksts[a+2];
-    //             a++;
-    //         }
-            
-    //     }
-        
-        // if (teksts[i + 1] == 32)        
-        // {
-        //     int a = i + 1;
-        //     teksts[a + 1] = teksts[a + 2];  
-        //     while (a < skaits)    
-        //     {
-                        
-        //         teksts[a+2] = teksts[a+3];
-        //         a++;
-        //     }
-            
-        // }
-        
-    
-    
- 
-   
-
-   
     /// allowed char check
 
     for (int i = 0; i < strlen(teksts) - 1; i++)
@@ -189,14 +137,16 @@ int main()
         printf("Para mediana: %c un %c \n", fixtext[med-1], fixtext[med]);
     }
 
-    ///////moda
+    ////////////////////moda
+
     unsigned char chars[len];
     unsigned char freq[len];
     int max_moda = 0;
+    int modu_count = 1;
     a = 0;
     chars[a] = fixtext[1];
-    
-    
+    freq[a] = 0;
+    ///////katru individualu burtu pievieno sarakstaa
     for (int i = 2; i < strlen(fixtext); i++)
     {
         if (fixtext[i] != chars[a])
@@ -210,7 +160,7 @@ int main()
 
     }
     
-  
+    ///////biezuma saraksta piepilisana
     for (int j = 0; j < a+1; j++)
     {
         for (int i = 0; i < strlen(fixtext); i++)
@@ -226,20 +176,64 @@ int main()
     
     }
     
-    
-    max_moda = freq[0];
-    int moda_index = 0;
-    for (int j = 1; j < a+1; j++)
+    ////////modas meklesana biezuma sarakstaa
+
+    max_moda = 0;
+
+    unsigned char moda_index[strlen(fixtext)];
+
+    for (int j = 0; j < a+1; j++)
     {
         if (freq[j] > max_moda)
         {
-            max_moda = freq[j];
-            moda_index = j;
+            max_moda = freq[j];     
+            moda_index[0] = j;
         }
         
     }
+
+    for (int i = 0; i < a+1; i++)
+    {
+        if (freq[i] == max_moda && moda_index[0] != i)
+        {
+            moda_index[modu_count] = i;
+            modu_count++;
+        }
+        
+    }
+
+
+    if (modu_count == 1)
+    {
+        printf("Moda ir: %c , %d (%d reizes) \n", chars[moda_index[0]], chars[moda_index[0]],  max_moda);
+    }
+    else
+    {
+        for (int i = 0; i < modu_count; i++)
+        {
+            printf("Modas ir: %c , %d (%d reizes); \n", chars[moda_index[i]], chars[moda_index[i]],  max_moda);
+        }
+    }
     
-    printf("Moda ir: %c (%d reizes)", chars[moda_index], max_moda);
+    printf("Modu skaits: %d", modu_count);
+    
+    ////////izvade gnuplot
+
+    FILE * pFile;
+    
+    pFile = fopen ("sort.dat", "w");
+    fprintf(pFile, "burts\tfrekvence\n");
+
+    for (int j = 0; j < a+1; j++)
+    {
+        fprintf(pFile, "%c\t\t\t%d\n", chars[j], freq[j]);
+    }
+
+
+    fclose (pFile);
+
+
+
 
     return 0;
 

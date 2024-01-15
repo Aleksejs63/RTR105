@@ -1,26 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-#include <stdbool.h> 
 
 int main()
 {
 
-
-    //noformesana
-
-    // a b c
-    //97 98 99
-    //5  2  1  -ciik reizes paradas
-    //  med  max  -kas tā par vērtību, ja tā ir kautkāda
-
-    // gnuplotaa histogramma    
+ 
 
     int len = 256;
     unsigned char teksts[len];
     
-    printf("Ievadiet tekstu: ");
+    printf("Cien. lietotaj ludzu ievadiet tekstu (izmantojot tikai anglu alfabeta burtus): ");
     fgets(teksts, len, stdin);
 
     int spacecount = 0;
@@ -97,7 +87,7 @@ int main()
         fixtext[a+1] = '\0';
     }
     
-
+  
     
     printf("Sakartots teksts: %s \n", fixtext);
 
@@ -176,9 +166,9 @@ int main()
     
     }
     
-    ////////modas meklesana biezuma sarakstaa
+    ////////modas meklesana biezuma masiivaa
 
-    max_moda = 0;
+   
 
     unsigned char moda_index[strlen(fixtext)];
 

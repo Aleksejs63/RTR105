@@ -7,6 +7,7 @@ Grupa: RECV0-1
 - [grafiks.gp](https://github.com/Aleksejs63/RTR105/blob/main/darbi/4ld_integral/grafiks.gp) -> Gnuplot skripts, kurš izveido derivative.png izmantojot datus no derivative.dat faila, kuru izveidoja atvasinajums.c programma. 
 - [grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/grafiks.png) -> Gnuplotā izveidotais grafiks, kurš satur pašu funkciju cos(sqrt(x)) un tās pirmās un otrās kārtas atvasinājumu pēc forward difference un analītiskās metodes.
 - [wolfram-integral.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/wolfram-integral.png) -> derivative.png grafika pietuvinātā daļa, lai var redzēt atšķirību starp abām metodēm.
+- [kods.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/kods.png) -> Gnuplot izveidotais grafiks, kur ar pelēko iekrāsotais laukums atbilst integrālim funkcijai cos(sqrt(x)) intervālā [30:35]
 - [README.md](https://github.com/Aleksejs63/RTR105/blob/main/darbi/4ld_integral/README.md) -> Laboratorijas darbu apraksošs dokuments, kurš satur sevī informāciju par uzrakstīto kodu, pielietotām metodem un šīs mapes saturu.
 
 ## Apraksts
@@ -50,14 +51,14 @@ For cikls darbojas kamēr mainīgais k ir mazāks par figūru skaitu (iziet caur
 Trapeču metodē viss ir identisks kā taisnstūru metodei izņemot for ciklu, kurš šoreiz sākas ar k = 1, lai varētu iegūt trapeces platuma sākumpunktu ((k-1) * h).
 Pati formula arī atšķiras, jo tagad ir jāņem funkcijas pie sākumpunkta, jāsaskaita tā ar funkciju galapunktā un jāreizina ar platumu dalīts ar 2.
 
+Simpsonu metode ir vissarežģītākā no šim trim metodēm, tapēc to izskaidrot ir sarežģītāk, bet būtībā integrālis tiek iegūts summējot funkciju pie intervāla sākumpunka un galapunkta, kā arī pirmspēdējo vērtību reizinot ar 4 un pie tā visa jāpieskaita visu intervālu summa, kura veidojas pāra vērtības reizinot ar 2 un nepāra ar 4 un to visu saskaitot un reizinot ar h/3 mēs iegūstam gala integrāli.
 
-
-
+Pēc katras metodes tās rezultāts tiek izvadīts float tipā ar 5 cipariem aiz komata, norādot arī metodes nosaukumu.
 ### Grafiks
-![derivative.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative.png)
-![derivative_closeup.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/3ld_derivative/derivative_closeup.png)
-
-Var redzēt, ka abas metodes nedaudz atšķiras. Bija nepieciešams ļoti tuvu pietuvināt, lai redzētu nelielu atšķirību. No tā var secināt, ka metode ir ļoti precīza.
-
-Ja ir vēlme izveidot grafiku ar citām vērtībām, tad ieteicams norādīt skripta failā x robežas no izvēlētā a līdz izvēlētam b atvasinajums.c programmā. Kā arī pareizi izvēlēties kolonnu no kuras tiek ņemtas vērtības. Ir jāņem vērā, ka plot robežas galējo vērtību nav jāņem kā izvēlēto b, jo pēc forward difference metodes nevar iegūt pēdējo pirmās kārtas atvasinājuma vērtību un pēdējās divas otrās kārtas atvasinājuma vērtību. Grafikā tas uzrādīsies kā funkciju straujš kritums uz y=0.
+Attēlā var apskatīt koda darbības principu. No šiem visprecīzāko rezultātu atgrieza simpsona metode, ko var apskatīt otrajā attēlā.
+![kods.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/kods.png)
+Šeit redzams integrāļa rezultāts no saites https://www.wolframalpha.com , ar kuru tika salīdzināts programmas rezultāts, lai izprast tās precizitāti.
+![wolfram-integral.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/wolfram-integral.png)
+Gnupot grafikā redzams, ka funkcija intervālā x = [30:35] y ir aptuveni vidēji 0.8 un tā ka x ir 5 reizinot iegūstam 4 kas ir diezgan tuvu programmas iegūtai vērtībai (aptuveni 4.13). 
+![grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/grafiks.png)
 

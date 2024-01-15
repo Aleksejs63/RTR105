@@ -56,9 +56,12 @@ Simpsonu metode ir vissarežģītākā no šim trim metodēm, tapēc to izskaidr
 Pēc katras metodes tās rezultāts tiek izvadīts float tipā ar 5 cipariem aiz komata, norādot arī metodes nosaukumu.
 ### Grafiks
 Attēlā var apskatīt koda darbības principu. No šiem visprecīzāko rezultātu atgrieza simpsona metode, ko var apskatīt otrajā attēlā.
+
 ![kods.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/kods.png)
 Šeit redzams integrāļa rezultāts no saites https://www.wolframalpha.com , ar kuru tika salīdzināts programmas rezultāts, lai izprast tās precizitāti.
+
 ![wolfram-integral.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/wolfram-integral.png)
+
 Gnupot grafikā redzams, ka funkcija intervālā x = [30:35] y ir aptuveni vidēji 0.8 un tā ka x ir 5 reizinot iegūstam 4 kas ir diezgan tuvu programmas iegūtai vērtībai (aptuveni 4.13). 
 ![grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/4ld_integral/grafiks.png)
 

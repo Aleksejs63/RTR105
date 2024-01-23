@@ -3,8 +3,8 @@ Autors: Aleksejs Jakimovičs
 
 Grupa: RECV0-1
 ## Mapes saturs
-- [saknes.c](https://github.com/Aleksejs63/RTR105/blob/main/darbi/1ld_series/grafiks.c) -> Uzrakstītā programma
-- [README.md](https://github.com/Aleksejs63/RTR105/blob/main/darbi/1ld_series/README.md) -> Laboratorijas darbu apraksošs dokuments, kurš satur sevī informāciju par uzrakstīto kodu.
+- [saknes.c](https://github.com/Aleksejs63/RTR105/blob/main/darbi/2ld_roots/saknes.c) -> Uzrakstītā programma
+- [README.md](https://github.com/Aleksejs63/RTR105/blob/main/darbi/2ld_roots/README.md) -> Laboratorijas darbu apraksošs dokuments, kurš satur sevī informāciju par uzrakstīto kodu.
 - [roots.dat](https://github.com/Aleksejs63/RTR105/blob/main/darbi/2ld_roots/roots.dat) -> dat fails, kurš satur sakni no programmas un y = 0.
 - [grafiks.gp](https://github.com/Aleksejs63/RTR105/blob/main/darbi/2ld_roots/grafiks.gp) -> Gnuplot skripts, kurš veido dotās funkcijas grafiku un punktu ar korrdinātēm no roots.dat faila.
 - [grafiks.png](https://raw.githubusercontent.com/Aleksejs63/RTR105/main/darbi/2ld_roots/grafiks.png) -> grafiks.gp skripta izveidotā grafika attēls.
